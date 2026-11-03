@@ -1,0 +1,27 @@
+﻿upload PLACE_OBS_HERE try 0 tok XZu5b1JtAoAZ99x0faXcatOHnde ok true
+upload PLACE_ACT_HERE try 0 tok Gg4Wb93Myo8Z0Gxeuxacyy0Rnwk ok true
+upload PLACE_RWD_HERE try 0 tok null ok false
+upload PLACE_RWD_HERE try 1 tok GNpWbmxlPoer1FxvkHecozRNnhg ok true
+upload PLACE_TERM_HERE try 0 tok Q7gebkBE9on7O8xECn5c8dd9nvd ok true
+upload PLACE_TRUNC_HERE try 0 tok DtRRbaEoMoeBhWxiN0mc3W44nhg ok true
+replace PLACE_OBS_HERE ok true async okish
+replace PLACE_ACT_HERE ok true async okish
+replace PLACE_RWD_HERE ok true async okish
+replace PLACE_TERM_HERE ok true async okish
+replace PLACE_TRUNC_HERE ok true async okish
+wait 25s for async
+images 6
+placeholders left []
+PLACE_OBS_HERE near key has image? true
+PLACE_ACT_HERE near key has image? false
+PLACE_RWD_HERE near key has image? false
+PLACE_TERM_HERE near key has image? true
+PLACE_TRUNC_HERE near key has image? true
+trailing dups 5
+del true
+del true
+del true
+del true
+del true
+FINAL images 1
+FINAL places []

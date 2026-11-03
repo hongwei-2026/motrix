@@ -1,0 +1,25 @@
+﻿1) rewrite section 3
+true 文档更新成功（replace_range模式）
+2) fetch to verify placeholders
+IMGPIC_OBS true
+IMGPIC_ACT true
+IMGPIC_RWD true
+IMGPIC_TERM true
+IMGPIC_TRUNC true
+### 3. 奖励 true
+### 4. 终止 true
+3) delete old end images by replace_range from first leftover image if any
+4) upload + replace each placeholder
+upload IMGPIC_OBS undefined undefined undefined
+upload IMGPIC_ACT undefined undefined undefined
+upload IMGPIC_RWD undefined undefined undefined
+upload IMGPIC_TERM undefined undefined undefined
+upload IMGPIC_TRUNC undefined undefined undefined
+DONE. image tags: 5
+placeholders left: [
+  'IMGPIC_OBS',
+  'IMGPIC_ACT',
+  'IMGPIC_RWD',
+  'IMGPIC_TERM',
+  'IMGPIC_TRUNC'
+]

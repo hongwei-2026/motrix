@@ -1,0 +1,29 @@
+﻿insert PLACE_ACT_HERE true ok
+up PLACE_ACT_HERE 0 Ip4QbnfNAoqtAZxp8BjcOFFJnSJ
+replace PLACE_ACT_HERE true 
+insert PLACE_RWD_HERE true ok
+up PLACE_RWD_HERE 0 QjrqbA1KJoWoiwxsqD9cK2bInXK
+replace PLACE_RWD_HERE true 
+insert PLACE_TERM_HERE true ok
+up PLACE_TERM_HERE 0 JJdkbfhOioh4QKx7nPCctpn3nWf
+replace PLACE_TERM_HERE true async
+insert PLACE_TRUNC_HERE true ok
+up PLACE_TRUNC_HERE 0 DZe5b7Ncoo6kGsxFwAUcCg9inld
+replace PLACE_TRUNC_HERE true async
+wait 20s
+images 9
+PLACE_ACT_HERE img near? false place left? false
+PLACE_RWD_HERE img near? true place left? false
+PLACE_TERM_HERE img near? true place left? false
+PLACE_TRUNC_HERE img near? true place left? false
+mid images before anchor 3 tail 6
+FINAL 9
+IMG before: "_envs/.../go1/walk_np.py函数：_init_obs_space()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+IMG before: "scale=0.05，再 PD（kp=80, kd=1）得力矩→ XML：ctrlrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+IMG before: "截图位置（2 分）walk_np.py → update_reward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"
+IMG before: "envs()、step()**回合结束后谁重置（2 分）**step() 末尾调用 _reset_done_envs()，再调用子类 reset(data)。\n"
+IMG before: " token=\"TU7UbQTcYoIz4SxGaFMcJwH1nHd\" width=\"960\" height=\"902\" align=\"center\"/>\n\n"
+IMG before: " token=\"EW0NbZo5vo6vXuxZGZdcF4IYnmb\" width=\"960\" height=\"330\" align=\"center\"/>\n\n"
+IMG before: " token=\"Jd6hbnwcDofsYsxpS08ckZFJnfd\" width=\"960\" height=\"440\" align=\"center\"/>\n\n"
+IMG before: "token=\"WoUXboUxjoeiXQxrOB7cDO5gnrd\" width=\"1099\" height=\"462\" align=\"center\"/>\n\n"
+IMG before: " token=\"ChCRbbrpzoVvAExfISEcCBI0nLb\" width=\"960\" height=\"330\" align=\"center\"/>\n\n"

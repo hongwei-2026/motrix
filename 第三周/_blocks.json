@@ -1,0 +1,24 @@
+﻿node.exe : Usage:
+所在位置 C:\Users\yuhon\AppData\Roaming\npm\lark-cli.ps1:24 字符: 5
++     & "node$exe"  "$basedir/node_modules/@larksuite/cli/scripts/run.j ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Usage::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  lark-cli api <method> <path> [flags]
+
+Flags:
+      --as string        identity type: user | bot | auto (default) (default "auto")
+      --data string      request body JSON
+      --dry-run          print request without executing
+      --format string    output format: json|ndjson|table|csv (default "json")
+  -h, --help             help for api
+  -q, --jq string        jq expression to filter JSON output
+  -o, --output string    output file path for binary responses
+      --page-all         automatically paginate through all pages
+      --page-delay int   delay in ms between pages (default 200)
+      --page-limit int   max pages to fetch with --page-all (0 = unlimited) (default 10)
+      --page-size int    page size (0 = use API default)
+      --params string    query parameters JSON
+
+Error: accepts 2 arg(s), received 3

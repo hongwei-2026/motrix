@@ -1,0 +1,155 @@
+﻿A) rewrite clean section 3 with placeholders
+true 文档更新成功（replace_range模式）
+placeholders [
+  [ 'PLACE_OBS_HERE', true ],
+  [ 'PLACE_ACT_HERE', true ],
+  [ 'PLACE_RWD_HERE', true ],
+  [ 'PLACE_TERM_HERE', true ],
+  [ 'PLACE_TRUNC_HERE', true ]
+]
+B) delete all existing images
+found images 0
+C) upload 5 images
+up fail PLACE_OBS_HERE 0 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnjPMkcqqRwLlIBbBiRFTHJb",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "PWKmb9jjooPbBQxXuZ6cr11lnIg",
+    
+up fail PLACE_OBS_HERE 1 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcndK1hdJqNrnzIotvEt36VTb",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "O34wbYbthoKTeDx2R73cxyUYnXb",
+    
+up fail PLACE_OBS_HERE 2 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnhNAZULlfl34z4jUUbAEkce",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "GQ7ZbQbBfoRR4dxrm1McHoU6nJh",
+    
+up fail PLACE_ACT_HERE 0 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcn9eW8Lem1tXb6Jj5bmSJsMZ",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "TAXhbJjX8oqsP2xFei4cwpdanPB",
+    
+up fail PLACE_ACT_HERE 1 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnPSXIxhOiZGo0mmJYvgz1Zf",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "VA2rbYxvjorDQMxHMoVcyvkMnPb",
+    
+up fail PLACE_ACT_HERE 2 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnRXMj60fVIYovZxC6TeHLme",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "SK6Fb3ASkoASJ1x8HPrc8EVVn8e",
+    
+up fail PLACE_RWD_HERE 0 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnNYeK7M0OMMvyheLIABaZvf",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "S3PZbPRGDomjQSxBBAccANtDnAc",
+    
+up fail PLACE_RWD_HERE 1 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcna41MzVIfYLYciHkbkIfPwb",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "AutEbvMgpoZBoJxw70CcvwhTnre",
+    
+up fail PLACE_RWD_HERE 2 API call failed: Get "https://open.feishu.cn/open-apis/docx/v1/documents/NO7PwbbhZiz2ZRkuXHZclBhwnGf/blocks/NO7PwbbhZiz2ZRkuXHZclBhwnGf": net/http: TLS handshake timeout
+up fail PLACE_TERM_HERE 0 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnBEknhL0NPzlFEy4Ak0l8Ah",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "GHfSboNphoVlxCxFroucEmcZnDf",
+    
+up fail PLACE_TERM_HERE 1 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnapTrV1utUhH4xPem6IBORd",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "N4e6b3UfQoaMWdxiL4ocqKjQnKh",
+    
+up fail PLACE_TERM_HERE 2 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnD4fFWvt8Of1aWYqWanMgMh",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "V43dbS8WUod5scxEFdYc6k9onev",
+    
+up fail PLACE_TRUNC_HERE 0 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnT3jbB3s6JAKJVtEGCPKezg",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "WGzfb6jVyoMdylxG8T5cZb7Rn6g",
+    
+up fail PLACE_TRUNC_HERE 1 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcnnbJ1Ov4l9MpGfUwAoKimbb",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "EVOLbGKAyo1QMbxJBpwcOtfpnzb",
+    
+up fail PLACE_TRUNC_HERE 2 {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "block_id": "doxcn2JNXAV3ApwFjoCi8Sfzq5e",
+    "document_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "file_token": "DtHnbrKjAokQK5xVeuLcJ6CdnXh",
+    
+D) replace placeholders with images
+E) wait async 20s
+PLACE_OBS_HERE mark? true img near key? false tok in doc? false
+PLACE_ACT_HERE mark? true img near key? false tok in doc? false
+PLACE_RWD_HERE mark? true img near key? false tok in doc? false
+PLACE_TERM_HERE mark? true img near key? true tok in doc? false
+PLACE_TRUNC_HERE mark? true img near key? true tok in doc? false
+trailing after anchor 14
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+del trailing true 
+FINAL images in sec3 0
+FINAL placeholders left [
+  'PLACE_OBS_HERE',
+  'PLACE_ACT_HERE',
+  'PLACE_RWD_HERE',
+  'PLACE_TERM_HERE',
+  'PLACE_TRUNC_HERE'
+]

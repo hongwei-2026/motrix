@@ -1,0 +1,16 @@
+=== runs/cartpole tree ===
+[D] skrl/
+[D] skrl/26-10-21_11-04-41-419926_PPO/
+[D] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_1000.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_1500.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_2000.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_2500.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_3000.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_3500.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_4000.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_4500.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_500.pt  (29829 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/agent_5000.pt  (29877 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/checkpoints/best_agent.pt  (36789 bytes)
+[F] skrl/26-10-21_11-04-41-419926_PPO/events.out.tfevents.1792580684.383e3bf0f713.28008.0  (80592 bytes)

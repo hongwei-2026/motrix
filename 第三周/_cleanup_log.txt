@@ -1,0 +1,26 @@
+﻿delete trailing 6
+del true
+del true
+del true
+del true
+del true
+del true
+NEED_TERM already has image near key? false
+insert NEED_TERM false 
+insert short NEED_TERM true
+up NEED_TERM WONCbc4XCozqdDxZvL4cMcjMnRb
+replace NEED_TERM true
+NEED_TRUNC already has image near key? false
+insert NEED_TRUNC false 
+insert short NEED_TRUNC true
+up NEED_TRUNC QTTbb991boMFMqx87sjcTbxvnMe
+replace NEED_TRUNC true
+mid 3 tail 4
+FINAL images 7
+BEFORE "go1/walk_np.py函数：_init_obs_space()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+BEFORE "，再 PD（kp=80, kd=1）得力矩→ XML：ctrlrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+BEFORE "alk_np.py → update_reward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"
+BEFORE "p()**回合结束后谁重置（2 分）**step() 末尾调用 _reset_done_envs()，再调用子类 reset(data)。\n"
+BEFORE "tfbopc2oDewzx9ePMcGaLrn1e\" width=\"960\" height=\"902\" align=\"center\"/>\n\n"
+BEFORE "cNbhMFOoojhwxMiaCczBZVnqg\" width=\"960\" height=\"330\" align=\"center\"/>\n\n"
+BEFORE "s3brWzFohFNFxrNZfcvGwanub\" width=\"960\" height=\"330\" align=\"center\"/>\n\n"

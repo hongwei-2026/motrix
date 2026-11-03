@@ -1,0 +1,4 @@
+  <actuator>
+    <motor name="elbow" joint="elbow" gear="30" ctrllimited="true" ctrlrange="-1 1"/>
+  </actuator>
+</mujoco>

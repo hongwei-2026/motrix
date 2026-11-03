@@ -1,0 +1,12 @@
+﻿IMGPIC_OBS true "Task is processing in the background. Please call this tool again with task_id=\"2a57c71f-a96d-421c-b906-9d144560cec7\" to get the result (document URL will be returned when complete)."
+IMGPIC_ACT true "Task is processing in the background. Please call this tool again with task_id=\"573776b4-90b6-4e4e-8753-af7e3158d18c\" to get the result (document URL will be returned when complete)."
+IMGPIC_RWD true "Task is processing in the background. Please call this tool again with task_id=\"53bd3a4c-6456-4fc7-a1da-39cd5803cf8d\" to get the result (document URL will be returned when complete)."
+IMGPIC_TERM true "Task is processing in the background. Please call this tool again with task_id=\"6d50d452-ccd7-419b-ae7b-ee9226462aae\" to get the result (document URL will be returned when complete)."
+IMGPIC_TRUNC true "Task is processing in the background. Please call this tool again with task_id=\"2c4b5ea1-686f-481d-96ee-7617db36c6ac\" to get the result (document URL will be returned when complete)."
+IMGPIC_OBS left? false token positions []
+IMGPIC_ACT left? false token positions []
+IMGPIC_RWD left? false token positions []
+IMGPIC_TERM left? false token positions []
+IMGPIC_TRUNC left? false token positions []
+after reset count images 5
+total images 6

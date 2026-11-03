@@ -1,0 +1,32 @@
+﻿insert mark ZZPIC_ACT true 文档更新成功（insert_after模式）
+replace ZZPIC_ACT true "Task is processing in the background. Please call this tool again with task_id=\"134c3037-e47f-4ca1-90ba-377515167137\" to get the result (document URL will be returned when complete)."
+insert mark ZZPIC_RWD false MCP: [VALIDATION:1102] 找到 2 个匹配，请提供更精确的定位
+💡 Suggestion: Please check if the input parameters meet the requirements
+📍 Context: second_match=**（1）截图位置（2 分）walk_np.py → update_reward..., suggestion=在定位表达式中添加更多上下文内容（如前后的标题、特殊标记）使其唯一, match_count=2, first_match=**（1）截图位置（2 分）walk_np.py → update_reward...
+replace ZZPIC_RWD false "MCP: [VALIDATION:1101] 未找到匹配的内容，请检查定位表达式是否正确\n💡 Suggestion: Please check if the input parameters meet the requirements\n📍 Context: ellipsis=ZZPIC_RWD, start_part=ZZPIC_RWD, end_part=, doc_preview=# 第三周作业：CartPole 环境分析\n**满分 100 分**\n## 作业须知\n- **代码版本**：以 MotrixLab v0.3.0 为准。课件代码与仓库�..., markdown_length=15971, suggestion=请先用 fetch-doc 获取文档内容，确认定位表达式中的开头和结尾内容确实存在于文档中"
+insert mark ZZPIC_TERM true 文档更新成功（insert_after模式）
+replace ZZPIC_TERM true "Task is processing in the background. Please call this tool again with task_id=\"5c433e0a-7374-49da-9487-86f8b7402f90\" to get the result (document URL will be returned when complete)."
+insert mark ZZPIC_TRUNC false MCP: [VALIDATION:1102] 找到 2 个匹配，请提供更精确的定位
+💡 Suggestion: Please check if the input parameters meet the requirements
+📍 Context: match_count=2, first_match=**截图：超时截断与自动重置（2 分）**np/env.py..., second_match=**截图：超时截断与自动重置（2 分）**np/env.py..., suggestion=在定位表达式中添加更多上下文内容（如前后的标题、特殊标记）使其唯一
+replace ZZPIC_TRUNC false "MCP: [VALIDATION:1101] 未找到匹配的内容，请检查定位表达式是否正确\n💡 Suggestion: Please check if the input parameters meet the requirements\n📍 Context: ellipsis=ZZPIC_TRUNC, start_part=ZZPIC_TRUNC, end_part=, doc_preview=# 第三周作业：CartPole 环境分析\n**满分 100 分**\n## 作业须知\n- **代码版本**：以 MotrixLab v0.3.0 为准。课件代码与仓库�..., markdown_length=32012, suggestion=请先用 fetch-doc 获取文档内容，确认定位表达式中的开头和结尾内容确实存在于文档中"
+wait for async...
+marks left []
+images in sec3 8
+--- apply_action() img? false
+apply_action()、_compute_torques()（约 160-174 行）**（2）控制部件与物理量（3 分）**控制 12 个腿关节（FR/FL/RR/RL 的 hip、thigh、calf）。策略输出是相对默认角的位置偏移；经 PD 后写入的物理量是关节力矩（N·m），赋给 state.data.actuator_ctrls。**（3）完整路径与裁剪/缩放（4 分）**策略输出 a (12维)→ 训练 clip_a
+--- update_reward() img? false
+update_reward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）** / - 持续 20 步：累计奖励 = 1 x 20 = 20 / - 持续 80 步：累计奖励 = 1 x 80 = 80**（3）为何能鼓励不倒/稳定（4 分）**在每步 +1 假设下：活得越久累计回报越大。对应 GO1：躯干触地会 terminated，且该步奖励置 0；不摔倒就能继续拿跟踪速度等正奖励，因此策略会被激励保持稳
+--- update_terminated() img? false
+update_terminated()**截图：超时截断与自动重置（2 分）**np/env.py → _update_truncate()、_reset_done_envs()、step()**回合结束后谁重置（2 分）**由环境基类在 step() 末尾调用 _reset_done_envs()；对 done = terminated | truncated 的环境，再调用子类 reset(data)（walk_np.py）。 / <i
+--- _update_truncate() img? true
+_update_truncate()、_reset_done_envs()、step()**回合结束后谁重置（2 分）**由环境基类在 step() 末尾调用 _reset_done_envs()；对 done = terminated | truncated 的环境，再调用子类 reset(data)（walk_np.py）。 / <image token="N6VIblubLo2wI6xIQkPcVmhWnke" width="960"
+tail images 6
+try delete tail false MCP: [VALIDATION:1101] 未找到匹配的内容，请检查定位表达式是否正确
+💡 Suggestion: Please check if the input parameters meet the requirements
+📍 Context: suggestion=请先用 fetch-doc 获取文档内容，确认定位表达式中的开头和结尾内容确实存在于文档中, ellipsis=reset(data)（walk_np.py）。
+<image token="Idx4baQkco3ClixNjoRcwUgInVb"...<image token="PeWabAnwHoNM5VxeE3DcUdHQn5f" width="960" height="902" align="center"/>, start_part=reset(data)（walk_np.py）。
+<image token="Idx4b..., end_part=<image token="PeWabAnwHoNM5VxeE3DcUdHQn5f" width="..., doc_preview=# 第三周作业：CartPole 环境分析
+**满分 100 分**
+## 作业须知
+- **代码版本**：以 MotrixLab v0.3.0 为准。课件代码与仓库�..., markdown_length=16057

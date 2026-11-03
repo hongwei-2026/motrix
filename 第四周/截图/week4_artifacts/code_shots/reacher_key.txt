@@ -1,0 +1,31 @@
+    def apply_action(self, actions, state):
+        state.data.actuator_ctrls = actions
+        return state
+
+    def _get_obs(self, data: mtx.SceneData) -> np.ndarray:
+        qpos = data.dof_pos
+        qvel = data.dof_vel
+        finger_xy = self._finger.get_pose(data)[:, :2]
+        to_target = self._target_xyz[:, :2] - finger_xy
+        return np.concatenate([qpos, to_target, qvel], axis=-1)
+
+    def update_state(self, state: NpEnvState) -> NpEnvState:
+        data = state.data
+        obs = self._get_obs(data)
+        finger_xy = self._finger.get_pose(data)[:, :2]
+        dist = np.linalg.norm(self._target_xyz[:, :2] - finger_xy, axis=-1)
+        rwd = reward.tolerance(
+            dist, bounds=(0.0, self._target_size), margin=self._target_size, value_at_margin=0.0, sigmoid="linear"
+        )
+        terminated = np.isnan(obs).any(axis=-1)
+        rwd[terminated] = 0.0
+
+        state.info["Reward"] = {"distance": dist, "tolerance": rwd.copy()}
+
+        return state.replace(obs=obs, reward=rwd, terminated=terminated)
+
+    def reset(self, data: mtx.SceneData) -> tuple[np.ndarray, dict]:
+        """Reset environment with randomized target position in xy plane (z=0)."""
+        data.reset(self._model)
+        num_reset = data.shape[0]
+

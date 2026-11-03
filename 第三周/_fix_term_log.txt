@@ -1,0 +1,15 @@
+﻿remove end cluster 2
+del true
+del true
+tokens Z1eXbA69RoeKM0xdlNZcnKernnb W8qebChJaoFZZIxCAjhckJ5KnQe
+replace heading true async
+replace heading true async
+mid imgs 5 tail 2
+del tail true
+del tail true
+FINAL 5
+BEFORE "ce()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+BEFORE "lrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+BEFORE "249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"
+BEFORE "ark-tr>\n</lark-table>\n\n**截图：失败判定（2 分）**\n"
+BEFORE "pdate_terminated()**截图：超时截断与自动重置（2 分）**\n"

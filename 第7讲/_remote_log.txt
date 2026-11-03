@@ -1,0 +1,76 @@
+$ ps aux | grep -E 'uv sync|install.sh|git lfs' | grep -v grep
+[exit=1]
+
+$ export PATH=$HOME/.local/bin:$PATH; cd /workspace/MotrixLab && git tag --sort=-v:refname | head -40
+[exit=0]
+
+$ export PATH=$HOME/.local/bin:$PATH; cd /workspace/MotrixLab && git log --all --oneline -- scripts/train.py | head -20
+[exit=0]
+
+$ export PATH=$HOME/.local/bin:$PATH; cd /workspace/MotrixLab && git log --all --diff-filter=A --summary -- scripts/train.py | head -40
+[exit=0]
+
+$ export PATH=$HOME/.local/bin:$PATH; which mxlab; ls /workspace/MotrixLab/.venv/bin 2>/dev/null | head
+activate
+activate.bat
+activate.csh
+activate.fish
+activate.nu
+activate.ps1
+activate.xsh
+activate_this.py
+deactivate.bat
+pydoc.bat
+[exit=0]
+
+$ export PATH=$HOME/.local/bin:$PATH; cd /workspace/MotrixLab && cat configs/task/cartpole/skrl.ppo.yaml
+# @package _global_
+# Task cartpole: skrl.ppo shared training recipe.
+defaults:
+  - /algo_base@algo: skrl.ppo
+  - _self_
+task:
+  env: cartpole
+  rllib: skrl
+  algo: ppo
+  train_backend: null
+num_envs: 2048
+play_num_envs: 16
+seed: 42
+algo:
+  models:
+    policy:
+      hiddens:
+        - 32
+        - 32
+    value:
+      hiddens:
+        - 32
+        - 32
+  agent:
+    learning_epochs: 5
+    mini_batches: 4
+  trainer:
+    timesteps: 5000
+[exit=0]
+
+$ export PATH=$HOME/.local/bin:$PATH; cd /workspace/MotrixLab && grep -R "train.py" -n README.md docs 2>/dev/null | head -20
+docs/scripts/run_benchmark.py:20:TRAIN_SCRIPT = REPO_ROOT / "scripts" / "train.py"
+docs/source/en/user_guide/tutorial/advanced/custom_training_backend.md:222:When adding an integration, follow this split: `framework.py` registers capabilities, while `train.py` or an equivalent module owns framework-specific execution.
+docs/source/zh_CN/user_guide/tutorial/advanced/custom_training_backend.md:223:扩展新后端时，优先模仿这些文件的分层：`framework.py` 负责注册，`train.py` 或等价模块负责训练细节。
+[exit=0]
+
+$ ls -la /workspace/MotrixLab/.venv 2>/dev/null; du -sh /workspace/MotrixLab/.venv 2>/dev/null
+total 20
+drwxr-xr-x  4 root root  142 Oct 21 09:42 .
+drwxr-xr-x 33 root root 4096 Oct 21 09:42 ..
+-rw-r--r--  1 root root    1 Oct 21 09:42 .gitignore
+-rw-rw-rw-  1 root root    0 Oct 21 09:42 .lock
+-rw-r--r--  1 root root   43 Oct 21 09:42 CACHEDIR.TAG
+drwxr-xr-x  2 root root 4096 Oct 21 09:42 bin
+drwxr-xr-x  3 root root   32 Oct 21 09:42 lib
+lrwxrwxrwx  1 root root    3 Oct 21 09:42 lib64 -> lib
+-rw-r--r--  1 root root  132 Oct 21 09:42 pyvenv.cfg
+64K	/workspace/MotrixLab/.venv
+[exit=0]
+

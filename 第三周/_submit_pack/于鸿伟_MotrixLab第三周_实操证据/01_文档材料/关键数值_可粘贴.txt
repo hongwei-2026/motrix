@@ -1,0 +1,8 @@
+env=go1-flat-terrain-walk | MotrixLab v0.3.0
+obs=48 = linvel3+gyro3+gravity3+joint_pos12+joint_vel12+last_action12+cmd3
+action=12 | action_scale=0.05 | PD kp=80 kd=1 | ctrlrange=[-23.7,23.7]
+terminated: trunk-floor contact
+truncated: 20.0/0.01=2000 steps
+commands on reset: vx[-1,2] vy[-1,1] vyaw[-1,1]
+未实现(平地): joint reset noise; obs NoiseConfig; speed>1e8 terminate
+飞书: https://ccnz793r59f8.feishu.cn/wiki/NO7PwbbhZiz2ZRkuXHZclBhwnGf

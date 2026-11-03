@@ -1,0 +1,12 @@
+Motphys profiler initialized: disabled
+I1021 11:10:26.789854 139805963806528 play.py:143] DeviceSupports(torch=True, torch_gpu=True, jax=False, jax_gpu=False)
+I1021 11:10:26.790200 139805963806528 play.py:167] Using specified RL framework: skrl
+I1021 11:10:26.790231 139805963806528 play.py:168] Using specified policy: runs/cartpole/skrl/26-10-21_11-04-41-419926_PPO/checkpoints/best_agent.pt
+[33;20m[skrl:WARNING] Using `from skrl.envs.torch import ...` is deprecated and will be removed in future versions.[0m
+W1021 11:10:26.883312 139805963806528 torch.py:5] Using `from skrl.envs.torch import ...` is deprecated and will be removed in future versions.
+[33;20m[skrl:WARNING]  - Import loaders using `from skrl.envs.loaders.torch import ...`[0m
+W1021 11:10:26.883456 139805963806528 torch.py:6]  - Import loaders using `from skrl.envs.loaders.torch import ...`
+[33;20m[skrl:WARNING]  - Import wrappers using `from skrl.envs.wrappers.torch import ...`[0m
+W1021 11:10:26.883491 139805963806528 torch.py:7]  - Import wrappers using `from skrl.envs.wrappers.torch import ...`
+[38;20m[skrl:INFO] Seed: 42[0m
+I1021 11:10:26.889694 139805963806528 __init__.py:82] Seed: 42

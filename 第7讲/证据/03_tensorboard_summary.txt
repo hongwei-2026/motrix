@@ -1,0 +1,9 @@
+EVENT_FILES 1
+DIR runs/cartpole/skrl/26-10-21_11-04-41-419926_PPO
+TAGS ['Reward / Instantaneous reward (max)', 'Reward / Instantaneous reward (min)', 'Reward / Instantaneous reward (mean)', 'Reward / Total reward (max)', 'Reward / Total reward (min)', 'Reward / Total reward (mean)', 'Episode / Total timesteps (max)', 'Episode / Total timesteps (min)', 'Episode / Total timesteps (mean)', 'Loss / Policy loss', 'Loss / Value loss', 'Policy / Standard deviation', 'Learning / Learning rate']
+PICKED {"Reward / Instantaneous reward (max)": {"first": 1.0, "last": 1.0, "n": 100}, "Reward / Instantaneous reward (min)": {"first": 1.0, "last": 1.0, "n": 100}, "Reward / Instantaneous reward (mean)": {"first": 1.0, "last": 1.0, "n": 100}, "Reward / Total reward (max)": {"first": 50.0, "last": 1000.0, "n": 83}, "Reward / Total reward (min)": {"first": 17.0, "last": 1000.0, "n": 83}, "Reward / Total reward (mean)": {"first": 32.44465637207031, "last": 1000.0, "n": 83}, "Episode / Total timesteps (max)": {"first": 50.0, "last": 1000.0, "n": 83}, "Episode / Total timesteps (min)": {"first": 17.0, "last": 1000.0, "n": 83}, "Episode / Total timesteps (mean)": {"first": 32.44465637207031, "last": 1000.0, "n": 83}, "Loss / Policy loss": {"first": -0.0002495698572602123, "last": 0.00556769035756588, "n": 100}, "Loss / Value loss": {"first": 3.532325029373169, "last": 2.299097559443908e-06, "n": 100}}
+
+Traceback (most recent call last):
+  File "/tmp/tb_export.py", line 24, in <module>
+    Path("/tmp/tb_summary.json").write_text(json.dumps(summary, indent=2), ensure_ascii=False)
+TypeError: Path.write_text() got an unexpected keyword argument 'ensure_ascii'

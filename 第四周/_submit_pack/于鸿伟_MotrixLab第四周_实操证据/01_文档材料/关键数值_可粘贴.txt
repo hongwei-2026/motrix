@@ -1,0 +1,8 @@
+MotrixLab v0.3.0 | skrl+torch | seed=42 | num_envs=2048
+Pendulum timesteps=5000 lr=3e-4 hiddens=[64,64] episode_steps=400
+A energy_coef=1 | B energy_coef=0
+cartpole best: runs/cartpole/skrl/26-10-25_12-21-55-090874_PPO/checkpoints/best_agent.pt
+pendulum A:    runs/pendulum/skrl/26-10-25_12-22-44-980900_PPO/checkpoints/best_agent.pt
+pendulum B:    runs/pendulum/skrl/26-10-25_12-27-43-111800_PPO/checkpoints/best_agent.pt
+acrobot best:  runs/acrobot/skrl/26-10-25_12-23-29-008041_PPO/checkpoints/best_agent.pt
+reacher: reward=1 iff dist<=0.02; reward=0 iff dist>=0.04; target_y fixed 0.15; max_steps=240

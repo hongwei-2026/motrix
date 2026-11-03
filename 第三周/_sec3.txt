@@ -1,0 +1,230 @@
+﻿images 5
+DFtRbGwWDodqMFxshU1cDHbuntd
+TfaTbbNwLoXbjIxauIlcRNGxnxb
+Le49bdGzEoHIFFxsPhncasemnid
+CIqcb345No4G8pxOBd7cfnqZnVy
+NCZibbkl5onoJ1xKSz7c76lHnAf
+---SECTION3 LEN--- 4548
+三、代码阅读（40 分，每小题 10 分）
+> 作答环境：`go1-flat-terrain-walk`（题目模板写 CartPole，本题按实际四足代码作答）。截图请自行在 IDE 中贴对应文件行号。
+### 1. 观测（10 分）
+**（1）截图位置（3 分）**
+**文件：motrix_envs/src/motrix_envs/locomotion/go1/walk_np.py函数：_get_obs()（约 188–213 行），以及 _init_obs_space()（约 48–59 行，含 assert num_obs == 48）。**
+**（2）各分量实际顺序（2 分）**
+
+<lark-table rows="9" cols="3" header-row="true" column-widths="244,244,244">
+
+  <lark-tr>
+    <lark-td>
+      顺序
+    </lark-td>
+    <lark-td>
+      分量
+    </lark-td>
+    <lark-td>
+      维数 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      1
+    </lark-td>
+    <lark-td>
+      `noisy_linvel` 局部线速度
+    </lark-td>
+    <lark-td>
+      3 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      2
+    </lark-td>
+    <lark-td>
+      `noisy_gyro` 角速度
+    </lark-td>
+    <lark-td>
+      3 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      3
+    </lark-td>
+    <lark-td>
+      `local_gravity` 局部重力方向
+    </lark-td>
+    <lark-td>
+      3 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      4
+    </lark-td>
+    <lark-td>
+      `noisy_joint_angle` 关节角相对默认站姿偏差
+    </lark-td>
+    <lark-td>
+      12 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      5
+    </lark-td>
+    <lark-td>
+      `noisy_joint_vel` 关节角速度
+    </lark-td>
+    <lark-td>
+      12 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      6
+    </lark-td>
+    <lark-td>
+      `last_actions` 上一帧动作
+    </lark-td>
+    <lark-td>
+      12 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      7
+    </lark-td>
+    <lark-td>
+      `command` 速度命令 `[vx, vy, vyaw]`
+    </lark-td>
+    <lark-td>
+      3 {align="right"}
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+    </lark-td>
+    <lark-td>
+      **合计**
+    </lark-td>
+    <lark-td>
+      **48** {align="right"}
+    </lark-td>
+  </lark-tr>
+</lark-table>
+
+**（3）物理含义与单位（3 分）**
+
+<lark-table rows="8" cols="3" header-row="true" column-widths="244,244,244">
+
+  <lark-tr>
+    <lark-td>
+      分量
+    </lark-td>
+    <lark-td>
+      含义
+    </lark-td>
+    <lark-td>
+      单位（缩放前）
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      线速度
+    </lark-td>
+    <lark-td>
+      机体坐标系下基座线速度，再乘 `normalization.lin_vel=2`
+    </lark-td>
+    <lark-td>
+      m/s
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      角速度
+    </lark-td>
+    <lark-td>
+      陀螺仪角速度，再乘 `ang_vel=0.25`
+    </lark-td>
+    <lark-td>
+      rad/s
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      局部重力
+    </lark-td>
+    <lark-td>
+      重力方向转到机体坐标，反映姿态倾斜
+    </lark-td>
+    <lark-td>
+      无量纲方向向量
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      关节角偏差
+    </lark-td>
+    <lark-td>
+      当前关节角 − 默认站姿角，乘 `dof_pos=1`
+    </lark-td>
+    <lark-td>
+      rad
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      关节速度
+    </lark-td>
+    <lark-td>
+      12 关节角速度，乘 `dof_vel=0.05`
+    </lark-td>
+    <lark-td>
+      rad/s
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      上一动作
+    </lark-td>
+    <lark-td>
+      上一步策略输出的 12 维动作
+    </lark-td>
+    <lark-td>
+      与动作同量纲
+    </lark-td>
+  </lark-tr>
+  <lark-tr>
+    <lark-td>
+      速度命令
+    </lark-td>
+    <lark-td>
+      期望 `[vx,vy,vyaw]`，再乘 commands_scale
+    </lark-td>
+    <lark-td>
+      m/s、rad/s
+    </lark-td>
+  </lark-tr>
+</lark-table>
+
+**（4）维度核对（2 分）**
+`3+3+3+12+12+12+3 = 48`，与 `_init_obs_space` 中 `observation_space = Box(..., (48,))` 及 `assert num_obs == 48` 一致。
+### 2. 动作（10 分）
+**（1）截图位置（3 分）**
+`walk_np.py` → `apply_action()`、`_compute_torques()`（约 160–174 行）。
+**（2）控制部件与物理量（3 分）**
+**控制 12 个腿关节（FR/FL/RR/RL 的 hip、thigh、calf）。策略输出是相对默认角的位置偏移；经 PD 后写入的物理量是 关节力矩（N·m），赋给 state.data.actuator_ctrls。**
+**（3）完整路径与裁剪/缩放（4 分）**
+`策略输出 a (12维)`→ **训练 clip_actions：无**（`motrix_rl/.../skrl/config.py` 默认 `clip_actions=False`；`tasks/go1.py` 未覆盖为 True）→ **apply_action：有缩放** — `actions_scaled = a * action_scale`，`action_scale=0.05`；再 PD：`τ = kp*(a_scaled + default_angles − q) − kd*q̇`（`kp=80, kd=1`）→ **执行器 XML：有 ctrlrange、无 gear** — 对应文件是 `go1_motor_actuator.xml`（不是 cartpole.xml）：`ctrlrange=-23.7
+<image token="DFtRbGwWDodqMFxshU1cDHbuntd" width="973" height="968" align="center"/>
+
+<image token="TfaTbbNwLoXbjIxauIlcRNGxnxb" width="960" height="440" align="center"/>
+
+<image token="Le49bdGzEoHIFFxsPhncasemnid" width="1099" height="462" align="center"/>
+
+<image token="CIqcb345No4G8pxOBd7cfnqZnVy" width="960" height="902" align="center"/>
+
+<image token="NCZibbkl5onoJ1xKSz7c76lHnAf" width="960" height="330" align="center"/>
+
+

@@ -1,0 +1,30 @@
+.env
+.env.*
+**/credentials*
+**/*secret*
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.uv/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+_w8/extract46/
+_w8/MotrixArena_S1_46.zip
+_w8/vbot_0218.zip
+*.log
+_w8/_*.txt
+**/__pycache__/
+Thumbs.db
+Desktop.ini
+.DS_Store
+# huge / clone trees not needed for homework delivery
+MotrixLab/.venv/
+MotrixLab/**/runs/
+
+# scratch / contains SSH secrets ¡ª keep delivery in µÚ°ËÖÜ/
+_w8/
+_w567/
+

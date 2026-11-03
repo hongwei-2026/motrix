@@ -1,0 +1,25 @@
+﻿trailing 4
+del true
+del true
+del true
+del true
+images 3
+BEFORE "p.py函数：_init_obs_space()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+BEFORE "0, kd=1）得力矩→ XML：ctrlrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+BEFORE "→ update_reward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"
+insert ZZ_TERM true {
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "doc_id": "NO7PwbbhZiz2ZRkuXHZclBhwnGf",
+    "log_id": "2026102322
+up PeODb7ulloYwiaxDmQYcHEY9nsd
+replace true
+ZZ_TRUNC already ok
+mid 3 tail 2
+del tail true
+del tail true
+images 3
+BEFORE "p.py函数：_init_obs_space()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+BEFORE "0, kd=1）得力矩→ XML：ctrlrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+BEFORE "→ update_reward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"

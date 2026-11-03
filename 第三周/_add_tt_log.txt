@@ -1,0 +1,24 @@
+﻿insert MARK_TERM_ONLY true
+up MARK_TERM_ONLY 0 Z5Bbb24N5odyQFx8MIic3GdKnid
+replace MARK_TERM_ONLY true
+insert MARK_TRUNC_ONLY true
+up MARK_TRUNC_ONLY 0 S3jcb2qWboPbeFxmnsxceOs9nqF
+replace MARK_TRUNC_ONLY true
+wait 25s
+images 7
+BEFORE "it_obs_space()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+BEFORE "矩→ XML：ctrlrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+BEFORE "eward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"
+BEFORE "step() 末尾调用 _reset_done_envs()，再调用子类 reset(data)。\n"
+BEFORE "aFn3b\" width=\"960\" height=\"902\" align=\"center\"/>\n\n"
+BEFORE "R8nLc\" width=\"960\" height=\"330\" align=\"center\"/>\n\n"
+BEFORE "Vnnxe\" width=\"960\" height=\"330\" align=\"center\"/>\n\n"
+marks left []
+del extra true
+del extra true
+FINAL 5
+BEFORE "it_obs_space()（约 48-59 行）、_get_obs()（约 188-213 行）\n"
+BEFORE "矩→ XML：ctrlrange 为 -23.7 到 23.7，无 gear→ 执行器施加关节力矩\n"
+BEFORE "eward()（约 249-264 行）（2）设每步奖励为 1、无折扣的累计奖励（各 2 分）**\n"
+BEFORE "step() 末尾调用 _reset_done_envs()，再调用子类 reset(data)。\n"
+BEFORE "aFn3b\" width=\"960\" height=\"902\" align=\"center\"/>\n\n"
