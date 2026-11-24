@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-24",
+  "simulator": "motrixsim==0.5.0b2",
+  "control_dt_seconds": 0.01,
+  "checkpoint_sha256": "d0f9541e5f81f36e8b32ddd0ab9dcf048a977db47a09d3a8516054f7ed40a4cb",
+  "terrain_modified": false,
+  "policy_retrained": false,
+  "passed": 11,
+  "total": 11,
+  "cases": [
+    {
+      "seed": 0,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.126080513000488,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6666,
+      "first_arrival_step": 1335,
+      "final_position": [
+        -2.6525959968566895,
+        8.08635425567627,
+        1.5333225727081299
+      ],
+      "final_gz": -0.9819815158843994
+    },
+    {
+      "seed": 1,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.154841423034668,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6622,
+      "first_arrival_step": 1379,
+      "final_position": [
+        -2.6401407718658447,
+        8.1224946975708,
+        1.5378080606460571
+      ],
+      "final_gz": -0.981864869594574
+    },
+    {
+      "seed": 2,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.194602966308594,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6639,
+      "first_arrival_step": 1362,
+      "final_position": [
+        -2.6367995738983154,
+        8.117683410644531,
+        1.5356218814849854
+      ],
+      "final_gz": -0.9812030792236328
+    },
+    {
+      "seed": 3,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.184765815734863,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6643,
+      "first_arrival_step": 1358,
+      "final_position": [
+        -2.6199183464050293,
+        8.115592002868652,
+        1.5360027551651
+      ],
+      "final_gz": -0.9810407161712646
+    },
+    {
+      "seed": 4,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.193849563598633,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6675,
+      "first_arrival_step": 1326,
+      "final_position": [
+        -2.6551828384399414,
+        8.11764144897461,
+        1.5353642702102661
+      ],
+      "final_gz": -0.9807578325271606
+    },
+    {
+      "seed": 5,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.112985610961914,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6634,
+      "first_arrival_step": 1367,
+      "final_position": [
+        -2.6018764972686768,
+        8.046438217163086,
+        1.532209873199463
+      ],
+      "final_gz": -0.9731641411781311
+    },
+    {
+      "seed": 6,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.171618461608887,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6653,
+      "first_arrival_step": 1348,
+      "final_position": [
+        -2.6438727378845215,
+        8.0982666015625,
+        1.535003900527954
+      ],
+      "final_gz": -0.980569064617157
+    },
+    {
+      "seed": 7,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.148689270019531,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6672,
+      "first_arrival_step": 1329,
+      "final_position": [
+        -2.6464126110076904,
+        8.080205917358398,
+        1.5243271589279175
+      ],
+      "final_gz": -0.9803997874259949
+    },
+    {
+      "seed": 8,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.166166305541992,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6662,
+      "first_arrival_step": 1339,
+      "final_position": [
+        -2.650815010070801,
+        8.087491989135742,
+        1.5316306352615356
+      ],
+      "final_gz": -0.979225754737854
+    },
+    {
+      "seed": 9,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.194673538208008,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6626,
+      "first_arrival_step": 1375,
+      "final_position": [
+        -2.682011365890503,
+        8.103893280029297,
+        1.5324510335922241
+      ],
+      "final_gz": -0.9794743061065674
+    },
+    {
+      "seed": 42,
+      "steps": 8000,
+      "acceptance_pass": true,
+      "reach_2026": true,
+      "max_y": 8.20543098449707,
+      "flipped_steps": 0,
+      "fall_resets": 0,
+      "platform_hold_steps": 6656,
+      "first_arrival_step": 1345,
+      "final_position": [
+        -2.6906116008758545,
+        8.13409423828125,
+        1.5341051816940308
+      ],
+      "final_gz": -0.9817706346511841
+    }
+  ]
+}
